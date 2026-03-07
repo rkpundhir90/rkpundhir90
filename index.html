@@ -14,61 +14,77 @@
 <body>
 
     <div class="container">
-        <!-- ════════ HERO ════════ -->
-        <section class="hero">
-            <img src="https://github.com/rkpundhir90.png?v=2026" alt="Rohit Kumar Pundhir" class="hero-avatar">
-            <h1>Rohit Kumar Pundhir</h1>
-            <p class="hero-title">Principal Engineer &bull; Cloud Native App Architect</p>
-            <div class="hero-contact">
-                <a href="mailto:rkpundhir90@gmail.com"><i class="fas fa-envelope"></i> rkpundhir90@gmail.com</a>
-                <span><i class="fas fa-phone"></i> +91-9873623599</span>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/rkpundhir90" target="_blank" title="GitHub"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/rkpundhir90/" target="_blank" title="LinkedIn"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:rkpundhir90@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-
-            <div class="stats-bar">
-                <div class="stat-item">
-                    <div class="stat-number">11+</div>
-                    <div class="stat-label">Years Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">6</div>
-                    <div class="stat-label">Companies</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Projects</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">5</div>
-                    <div class="stat-label">Certifications</div>
-                </div>
-            </div>
-        </section>
-
         <!-- ════════ MAIN TABS ════════ -->
         <nav class="tabs-nav">
-            <button class="tab-btn active" onclick="switchTab('about')"><i class="fas fa-user"></i>&nbsp; About</button>
+            <button class="tab-btn active" onclick="switchTab('home')"><i class="fas fa-home"></i>&nbsp; Home</button>
+            <button class="tab-btn" onclick="switchTab('about')"><i class="fas fa-user"></i>&nbsp; About</button>
             <button class="tab-btn" onclick="switchTab('experience')"><i class="fas fa-briefcase"></i>&nbsp;
                 Experience</button>
+            <button class="tab-btn" onclick="switchTab('projects')"><i class="fas fa-code-branch"></i>&nbsp;
+                Projects</button>
             <button class="tab-btn" onclick="switchTab('certifications')"><i class="fas fa-award"></i>&nbsp;
                 Certifications</button>
         </nav>
 
+        <div id="tab-home" class="tab-content active">
+            <!-- ════════ HERO ════════ -->
+            <section class="hero">
+                <img src="https://github.com/rkpundhir90.png?v=2026" alt="Rohit Kumar Pundhir" class="hero-avatar">
+                <h1>Rohit Kumar Pundhir</h1>
+                <p class="hero-title">Principal Engineer &bull; Cloud Native App Architect</p>
+                <div class="hero-contact">
+                    <a href="mailto:rkpundhir90@gmail.com"><i class="fas fa-envelope"></i> rkpundhir90@gmail.com</a>
+                    <span><i class="fas fa-phone"></i> +91-9873623599</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/rkpundhir90" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rkpundhir90/" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:rkpundhir90@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+
+                <div style="margin-top: 24px;">
+                    <a href="Rohit_Pundhir_Resume.docx" download="Rohit_Pundhir_Resume.docx" class="download-btn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat-item">
+                        <div class="stat-number">11+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Companies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
         <!-- ═══════════════════════════════════ ABOUT TAB ═══════════════════════════════════ -->
-        <div id="tab-about" class="tab-content active">
+        <div id="tab-about" class="tab-content">
             <div class="about-summary">
-                Results-driven engineering leader with <strong>11+ years</strong> of experience designing and delivering
-                scalable, cloud-native enterprise platforms and SaaS products. Deep expertise in <strong>Golang, Java,
-                    and distributed systems architecture</strong>, with hands-on experience across AWS, Azure, and GCP.
+                Results-driven engineering leader with <strong>11+ years</strong> of experience designing and
+                delivering
+                scalable, cloud-native enterprise platforms and SaaS products. Deep expertise in <strong>Golang,
+                    Java,
+                    and distributed systems architecture</strong>, with hands-on experience across AWS, Azure, and
+                GCP.
                 Proven track record in <strong>AI/ML platform engineering</strong>—building data pipelines,
-                model-serving infrastructure, and ML workflows at enterprise scale. Adept at leading cross-functional
-                teams, driving architectural decisions, and shipping production systems that serve millions of users.
+                model-serving infrastructure, and ML workflows at enterprise scale. Adept at leading
+                cross-functional
+                teams, driving architectural decisions, and shipping production systems that serve millions of
+                users.
             </div>
 
             <div class="section-title">
@@ -104,7 +120,8 @@
                     <h4>Data &amp; Messaging</h4>
                     <div class="skill-tags"><span class="skill-tag">Apache Kafka</span><span class="skill-tag">Apache
                             Spark</span><span class="skill-tag">Debezium CDC</span><span class="skill-tag">Apache
-                            Flink</span><span class="skill-tag">Trino</span><span class="skill-tag">Apache NiFi</span>
+                            Flink</span><span class="skill-tag">Trino</span><span class="skill-tag">Apache
+                            NiFi</span>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -125,8 +142,9 @@
                 <div class="skill-card">
                     <h4>Architecture Patterns</h4>
                     <div class="skill-tags"><span class="skill-tag">Microservices</span><span
-                            class="skill-tag">Event-Driven</span><span class="skill-tag">SaaS Multi-Tenant</span><span
-                            class="skill-tag">SOA</span><span class="skill-tag">Saga Pattern</span></div>
+                            class="skill-tag">Event-Driven</span><span class="skill-tag">SaaS
+                            Multi-Tenant</span><span class="skill-tag">SOA</span><span class="skill-tag">Saga
+                            Pattern</span></div>
                 </div>
                 <div class="skill-card">
                     <h4>Domains</h4>
@@ -165,7 +183,8 @@
                     <p class="project-client"><i class="fas fa-building"></i> Client: Civica &nbsp;|&nbsp; <span
                             class="meta-badge" style="display:inline;border:none;padding:0;background:none">Role:
                             Principal Engineer</span> &nbsp;|&nbsp; Feb 2026 – Present</p>
-                    <p class="project-desc">Comprehensive LMS serving Admin, Learner, and Sales personas. Multi-tenant
+                    <p class="project-desc">Comprehensive LMS serving Admin, Learner, and Sales personas.
+                        Multi-tenant
                         SaaS with role-based access, full-text search, and real-time analytics dashboards.</p>
                     <ul class="project-contributions">
                         <li>Leading end-to-end platform architecture for a multi-tenant LMS with role-based access
@@ -178,7 +197,8 @@
                             progress tracking, certification</li>
                         <li>Implementing analytics pipelines for learner engagement, compliance tracking, and sales
                             funnel visibility</li>
-                        <li>Driving API-first design for seamless integration with third-party HRMS, CRM, and content
+                        <li>Driving API-first design for seamless integration with third-party HRMS, CRM, and
+                            content
                             providers</li>
                     </ul>
                     <div class="project-tech">
@@ -188,25 +208,32 @@
 
                 <div class="project-card">
                     <h4>AI/ML Platform</h4>
-                    <p class="project-client"><i class="fas fa-building"></i> Client: Cloudera &nbsp;|&nbsp; Role: Sr
+                    <p class="project-client"><i class="fas fa-building"></i> Client: Cloudera &nbsp;|&nbsp; Role:
+                        Sr
                         Lead Engineer &nbsp;|&nbsp; Jan 2025 – Jan 2026 &nbsp;|&nbsp; Team: 15</p>
-                    <p class="project-desc">Automating provisioning, scaling, and management of ML/AI infrastructure.
+                    <p class="project-desc">Automating provisioning, scaling, and management of ML/AI
+                        infrastructure.
                         Self-service AI, multi-cloud support, model lifecycle management, GPU optimization, and
                         enterprise security.</p>
                     <ul class="project-contributions">
-                        <li>Architected scalable AI/ML platform automating provisioning and lifecycle management across
+                        <li>Architected scalable AI/ML platform automating provisioning and lifecycle management
+                            across
                             multi-cloud Kubernetes clusters</li>
-                        <li>Designed self-service AI infrastructure for data scientists to provision GPU/CPU compute and
+                        <li>Designed self-service AI infrastructure for data scientists to provision GPU/CPU compute
+                            and
                             orchestrate ML workflows</li>
                         <li>Implemented MLOps CI/CD pipelines using Cloudera ML Pipelines and Airflow for model
                             training, deployment, and monitoring</li>
-                        <li>Led integration of Hugging Face and LLM fine-tuning on Cloudera ML Workspaces for enterprise
+                        <li>Led integration of Hugging Face and LLM fine-tuning on Cloudera ML Workspaces for
+                            enterprise
                             NLP inference</li>
-                        <li>Architected real-time AI inference using Kafka, Flink, and Cloudera DataFlow for low-latency
+                        <li>Architected real-time AI inference using Kafka, Flink, and Cloudera DataFlow for
+                            low-latency
                             model serving</li>
                         <li>Implemented enterprise security (RBAC, Kerberos, Ranger, SDX) ensuring GDPR and HIPAA
                             compliance</li>
-                        <li>Enabled AI observability with Prometheus and Grafana for pipeline health, model drift, and
+                        <li>Enabled AI observability with Prometheus and Grafana for pipeline health, model drift,
+                            and
                             resource monitoring</li>
                     </ul>
                     <div class="project-tech">
@@ -228,11 +255,13 @@
                     <h4>Device Context Platform</h4>
                     <p class="project-client"><i class="fas fa-building"></i> Client: Cisco &nbsp;|&nbsp; Role: Sr
                         Engineer &nbsp;|&nbsp; May 2024 – Dec 2024 &nbsp;|&nbsp; Team: 5</p>
-                    <p class="project-desc">Platform for periodic device data collection, RBAC/PBAC enforcement, user
+                    <p class="project-desc">Platform for periodic device data collection, RBAC/PBAC enforcement,
+                        user
                         behavior simulation, and access control across Cisco's security product ecosystem.</p>
                     <ul class="project-contributions">
                         <li>Led requirements gathering, architectural design, and PoC validation</li>
-                        <li>Designed scalable backend microservices in Go (Gin/Gorm) for periodic device data collection
+                        <li>Designed scalable backend microservices in Go (Gin/Gorm) for periodic device data
+                            collection
                             at scale</li>
                         <li>Managed technical team end-to-end—feature decomposition into tasks, ensuring on-time
                             delivery</li>
@@ -251,10 +280,12 @@
                         AnyConnect, and XDR for streamlined access control and policy enforcement.</p>
                     <ul class="project-contributions">
                         <li>Spearheaded design and development of the centralized IAM and provisioning platform</li>
-                        <li>Designed Kafka-based event-driven architecture for scalable inter-service communication</li>
+                        <li>Designed Kafka-based event-driven architecture for scalable inter-service communication
+                        </li>
                         <li>Automated provisioning workflows reducing onboarding time and accelerating time-to-value
                         </li>
-                        <li>Conducted code reviews, mentored junior developers, and drove code quality improvements</li>
+                        <li>Conducted code reviews, mentored junior developers, and drove code quality improvements
+                        </li>
                     </ul>
                     <div class="project-tech">
                         <span>Golang</span><span>Gin</span><span>PostgreSQL</span><span>Kafka</span><span>Docker</span><span>Kubernetes</span><span>AWS</span><span>Terraform</span>
@@ -263,15 +294,18 @@
 
                 <div class="project-card">
                     <h4>Industrial DataOps Platform</h4>
-                    <p class="project-client"><i class="fas fa-building"></i> Client: Rockwell Automation &nbsp;|&nbsp;
+                    <p class="project-client"><i class="fas fa-building"></i> Client: Rockwell Automation
+                        &nbsp;|&nbsp;
                         Role: Technical Lead &nbsp;|&nbsp; Jan 2022 – Dec 2023 &nbsp;|&nbsp; Team: 9</p>
                     <p class="project-desc">SaaS DataOps platform optimizing manufacturing with time-series data
                         modeling, multi-tenant isolation, and unique per-environment IdP configurations.</p>
                     <ul class="project-contributions">
                         <li>Led design and implementation of a multi-tenant SaaS DataOps platform</li>
-                        <li>Architected microservices in Java and Go with Azure API and OpenID for secure IdP configs
+                        <li>Architected microservices in Java and Go with Azure API and OpenID for secure IdP
+                            configs
                         </li>
-                        <li>Built high-throughput data ingestion APIs processing real-time IoT telemetry via Kafka and
+                        <li>Built high-throughput data ingestion APIs processing real-time IoT telemetry via Kafka
+                            and
                             Azure IoT Hub</li>
                         <li>Orchestrated deployments using Kubernetes, Helm, and Argo CD with zero-downtime releases
                         </li>
@@ -297,23 +331,28 @@
 
                 <div class="project-card">
                     <h4>Tech Innovators – Architectural Design Team</h4>
-                    <p class="project-desc">Core team responsible for developing PoCs to transition legacy applications
+                    <p class="project-desc">Core team responsible for developing PoCs to transition legacy
+                        applications
                         to modern tech stacks across UI, middleware, backend, containerization, and cloud. Managed
                         streaming platform and security controls.</p>
                     <ul class="project-contributions">
-                        <li>Developed PoCs to modernize legacy applications defining migration paths across full stack
+                        <li>Developed PoCs to modernize legacy applications defining migration paths across full
+                            stack
                         </li>
                         <li>Managed and improved the streaming platform, enabling event-driven architecture adoption
                         </li>
-                        <li>Designed Azure Cosmos DB solutions and implemented Kafka + Debezium CDC for real-time change
+                        <li>Designed Azure Cosmos DB solutions and implemented Kafka + Debezium CDC for real-time
+                            change
                             data capture</li>
-                        <li>Deployed on Azure AKS with GitOps-based CI/CD, integrating Azure AD for authentication</li>
+                        <li>Deployed on Azure AKS with GitOps-based CI/CD, integrating Azure AD for authentication
+                        </li>
                         <li>Implemented security controls across application, container, and cloud layers</li>
                     </ul>
                     <div class="project-tech"><span>Java</span><span>Spring
                             Boot</span><span>Golang</span><span>Docker</span><span>Kafka</span><span>Debezium
                             CDC</span><span>Azure AKS</span><span>Cosmos
-                            DB</span><span>Helm</span><span>Istio</span><span>Keycloak</span><span>Redis</span></div>
+                            DB</span><span>Helm</span><span>Istio</span><span>Keycloak</span><span>Redis</span>
+                    </div>
                 </div>
             </div>
 
@@ -330,7 +369,8 @@
 
                 <div class="project-card">
                     <h4>Log Analytics Framework</h4>
-                    <p class="project-desc">Integration of application logs to a centralized platform. Streaming of logs
+                    <p class="project-desc">Integration of application logs to a centralized platform. Streaming of
+                        logs
                         for fraud analytics using Spark engine with SparkML libraries.</p>
                     <ul class="project-contributions">
                         <li>Integrated application logs into centralized Log Analysis platform using Splunk</li>
@@ -345,10 +385,12 @@
 
                 <div class="project-card">
                     <h4>Developer Security Dashboard</h4>
-                    <p class="project-desc">Dashboard for Verizon app developers to scan code for vulnerabilities with
+                    <p class="project-desc">Dashboard for Verizon app developers to scan code for vulnerabilities
+                        with
                         director-level visibility for tracking security issues.</p>
                     <ul class="project-contributions">
-                        <li>Led development of the Developer Security Dashboard with director-level issue tracking</li>
+                        <li>Led development of the Developer Security Dashboard with director-level issue tracking
+                        </li>
                         <li>Designed graph-based data storage with JanusGraph and Cassandra</li>
                         <li>Integrated AWS, Okta, and Keycloak for OAuth2 authentication</li>
                     </ul>
@@ -371,10 +413,12 @@
 
                 <div class="project-card">
                     <h4>UPoint Portal</h4>
-                    <p class="project-desc">Single-entry web portal for HRBPO services—aggregation, layout management,
+                    <p class="project-desc">Single-entry web portal for HRBPO services—aggregation, layout
+                        management,
                         personalization, and multi-client configuration. Integrates with Workday and PeopleSoft.</p>
                     <ul class="project-contributions">
-                        <li>Developed microservices backend (Java/Spring Boot) and Angular frontend for multi-client HR
+                        <li>Developed microservices backend (Java/Spring Boot) and Angular frontend for multi-client
+                            HR
                             benefits portal</li>
                         <li>Managed Liferay portal integration for aggregation and page personalization</li>
                         <li>Optimized database interactions with Oracle DB, Hibernate, and Memcache caching</li>
@@ -405,7 +449,8 @@
                         Applications, IDM, Documentum, and Oracle Business Intelligence.</p>
                     <ul class="project-contributions">
                         <li>Developed and integrated SOAP Web Services for enterprise application communication</li>
-                        <li>Collaborated on SOA architecture design across CRM, HRMS, MDM, and Oracle Applications</li>
+                        <li>Collaborated on SOA architecture design across CRM, HRMS, MDM, and Oracle Applications
+                        </li>
                         <li>Managed core insurance workflows using EBao platform with Oracle DB</li>
                         <li>Ensured smooth integration of Documentum and Oracle Business Intelligence</li>
                     </ul>
@@ -413,6 +458,112 @@
                         <span>Java</span><span>SOAP</span><span>SOA</span><span>EBao</span><span>Oracle DB</span>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════ PROJECTS TAB ═══════════════════════════════════ -->
+        <div id="tab-projects" class="tab-content">
+            <div class="section-title">
+                <div class="icon"><i class="fas fa-code-branch"></i></div> Featured Projects
+            </div>
+
+            <div class="project-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
+
+                <div class="project-card" style="margin-bottom: 0;">
+                    <h4>Civica Learning Management System</h4>
+                    <p class="project-client"><i class="fas fa-building"></i> Civica (via GlobalLogic)</p>
+                    <p class="project-desc">Comprehensive multi-tenant SaaS LMS serving Admin, Learner, and Sales
+                        personas with role-based access, full-text search, and real-time analytics.</p>
+                    <div class="project-tech">
+                        <span>Go</span><span>PostgreSQL</span><span>Elasticsearch</span><span>MongoDB</span><span>Azure</span><span>AWS</span>
+                    </div>
+                </div>
+
+                <div class="project-card" style="margin-bottom: 0;">
+                    <h4>AI/ML Platform</h4>
+                    <p class="project-client"><i class="fas fa-building"></i> Cloudera</p>
+                    <p class="project-desc">Automating provisioning, scaling, and lifecycle management of ML/AI
+                        infrastructure across multi-cloud Kubernetes clusters with self-service AI and real-time
+                        inference.</p>
+                    <div class="project-tech">
+                        <span>Golang</span><span>Kafka</span><span>Kubernetes</span><span>MLOps</span><span>Hugging
+                            Face</span>
+                    </div>
+                </div>
+
+                <div class="project-card" style="margin-bottom: 0;">
+                    <h4>Device Context Platform</h4>
+                    <p class="project-client"><i class="fas fa-building"></i> Cisco</p>
+                    <p class="project-desc">Platform for periodic device data collection, RBAC/PBAC enforcement,
+                        user
+                        behavior simulation, and access control across Cisco's security ecosystem.</p>
+                    <div class="project-tech">
+                        <span>Golang</span><span>Gin</span><span>PostgreSQL</span><span>Kafka</span><span>React</span>
+                    </div>
+                </div>
+
+                <div class="project-card" style="margin-bottom: 0;">
+                    <h4>Provisioning &amp; IAM (PIAM)</h4>
+                    <p class="project-client"><i class="fas fa-building"></i> Cisco</p>
+                    <p class="project-desc">Centralized IAM and provisioning event-driven platform unifying Cisco
+                        Secure
+                        Access, AnyConnect, and XDR for streamlined access control.</p>
+                    <div class="project-tech">
+                        <span>Golang</span><span>Kafka</span><span>Kubernetes</span><span>AWS</span>
+                    </div>
+                </div>
+
+                <div class="project-card" style="margin-bottom: 0;">
+                    <h4>Industrial DataOps Platform</h4>
+                    <p class="project-client"><i class="fas fa-building"></i> Rockwell Automation</p>
+                    <p class="project-desc">SaaS DataOps platform optimizing manufacturing with high-throughput
+                        time-series data ingestion and modeling using Azure IoT Hub and Kafka.</p>
+                    <div class="project-tech">
+                        <span>Java</span><span>Golang</span><span>CrateDB</span><span>Trino</span><span>Azure</span>
+                    </div>
+                </div>
+
+                <div class="project-card" style="margin-bottom: 0;">
+                    <h4>Log Analytics &amp; Fraud Detection</h4>
+                    <p class="project-client"><i class="fas fa-building"></i> Verizon</p>
+                    <p class="project-desc">Centralized platform for application logs with real-time log streaming
+                        for
+                        fraud analytics using Spark/SparkML engine.</p>
+                    <div class="project-tech">
+                        <span>Java</span><span>Spark/SparkML</span><span>Kafka</span><span>Splunk</span>
+                    </div>
+                </div>
+
+                <div class="project-card" style="margin-bottom: 0;">
+                    <h4>Developer Security Dashboard</h4>
+                    <p class="project-client"><i class="fas fa-building"></i> Verizon</p>
+                    <p class="project-desc">Dashboard for developers to scan code for vulnerabilities with
+                        director-level visibility to track security issues using graph-based data storage.</p>
+                    <div class="project-tech"><span>Java</span><span>Spring
+                            Boot</span><span>React</span><span>JanusGraph</span></div>
+                </div>
+
+                <div class="project-card" style="margin-bottom: 0;">
+                    <h4>UPoint HRBPO Portal</h4>
+                    <p class="project-client"><i class="fas fa-building"></i> Alight Solutions</p>
+                    <p class="project-desc">Single-entry web portal for HR distribution across multiple clients.
+                        Integrates with Workday and PeopleSoft for aggregation and personalization.</p>
+                    <div class="project-tech"><span>Java</span><span>Angular</span><span>Liferay</span><span>Oracle
+                            DB</span></div>
+                </div>
+
+                <div class="project-card" style="margin-bottom: 0;">
+                    <h4>NIC-EASI</h4>
+                    <p class="project-client"><i class="fas fa-building"></i> National Insurance Company (via HCL)
+                    </p>
+                    <p class="project-desc">Enterprise solution integrating EBao (insurance), CRM, HRMS, MDM, Oracle
+                        Applications, IDM, Documentum, and Oracle Business Intelligence.</p>
+                    <div class="project-tech">
+                        <span>Java</span><span>SOAP</span><span>SOA</span><span>EBao</span><span>Oracle DB</span>
+                    </div>
+                </div>
+
             </div>
         </div>
 

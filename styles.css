@@ -167,7 +167,25 @@ body::before {
   box-shadow: var(--shadow-glow);
 }
 
-/* ─── TABS ─── */
+.download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--gradient-1);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  color: white;
+}
+
 .tabs-nav {
   display: flex;
   justify-content: center;
@@ -177,8 +195,11 @@ body::before {
   border-radius: 16px;
   padding: 6px;
   margin: 32px auto;
-  max-width: 600px;
+  max-width: 800px;
   backdrop-filter: blur(20px);
+  position: sticky;
+  top: 20px;
+  z-index: 50;
 }
 
 .tab-btn {
