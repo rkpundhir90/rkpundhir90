@@ -1,4 +1,4 @@
-# Hi there, I'm Rajkumar Pundhir! 👋
+# Hi there, I'm Rohit Pundhir! 👋
 
 <p align="left">
   <a href="https://www.linkedin.com/in/rkpundhir90/">
