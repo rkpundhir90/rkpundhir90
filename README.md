@@ -10,7 +10,7 @@
 - 🔭 I’m currently working on **LMS**
 - 🌱 I’m currently learning **LLM, RAG, Agentic AI**
 - 👯 I’m looking to collaborate on **Open Source Projects**
-- 💬 Ask me about **Platform Engineering, Application Architecture, and General Career Counselling**
+- 💬 Ask me about **Platform Engineering, Application Architecture and General Career Counselling**
 - ⚡ Fun fact: I love solving complex problems and turning coffee into code.
 
 ### 🛠 Tech Stack
