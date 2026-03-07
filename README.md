@@ -28,7 +28,7 @@
 
 ### 📫 Connect with me:
 - **LinkedIn:** [rkpundhir90](https://www.linkedin.com/in/rkpundhir90/)
-- **Email:** [rkpundhir90@gmail.com]
+- **Email:** rkpundhir90@gmail.com
 - **Portfolio:** [Optional: YourLink.com]
 
 ---
