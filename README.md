@@ -27,7 +27,7 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rkpundhir90&layout=compact&theme=radical)
 
 ### 📫 Connect with me:
-- **LinkedIn:** [linkedin.com/in/rkpundhir90](https://www.linkedin.com/in/rkpundhir90/)
+- **LinkedIn:** [rkpundhir90](https://www.linkedin.com/in/rkpundhir90/)
 - **Email:** [rkpundhir90@gmail.com]
 - **Portfolio:** [Optional: YourLink.com]
 
