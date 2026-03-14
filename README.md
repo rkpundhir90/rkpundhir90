@@ -29,7 +29,7 @@
 ### 📫 Connect with me:
 - **LinkedIn:** [rkpundhir90](https://www.linkedin.com/in/rkpundhir90/)
 - **Email:** rkpundhir90@gmail.com
-- **Portfolio:** [Optional: YourLink.com]
+- **Portfolio:** https://rkpundhir90.github.io/rkpundhir90
 
 ---
 *Generated based on [Rohit Pundhir's LinkedIn](https://www.linkedin.com/in/rkpundhir90/)*
