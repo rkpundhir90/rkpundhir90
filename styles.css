@@ -516,6 +516,10 @@ img {
   margin-top: 16px;
 }
 
+.full-profile-main .profile-panel + .profile-panel {
+  margin-top: 20px;
+}
+
 .info-card h4,
 .profile-panel h3,
 .stack-grid h4,
@@ -625,8 +629,77 @@ img {
   margin-top: 34px;
 }
 
-.profile-hero {
+/* ── Cross-profile founder navigation ───────────────────── */
+.founder-nav {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 32px;
+  padding: 18px 24px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(16px);
+}
+
+.founder-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(39, 77, 69, 0.08);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.founder-nav-link:hover {
+  background: rgba(39, 77, 69, 0.15);
+  transform: translateY(-1px);
+}
+
+.founder-nav-link.primary-nav {
+  background: var(--accent);
+  color: #fffaf2;
+}
+
+.founder-nav-link.primary-nav:hover {
+  background: var(--accent-strong);
+}
+
+.founder-nav-center {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.profile-hero {
+  align-items: start;
+  grid-template-columns: minmax(0, 1.9fr) minmax(240px, 0.8fr);
+}
+
+.profile-hero h2 {
+  max-width: none;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.back-link::before {
+  content: "<-";
 }
 
 .hero-subtitle {
@@ -642,6 +715,8 @@ img {
   gap: 16px;
   justify-items: center;
   text-align: center;
+  position: sticky;
+  top: 110px;
 }
 
 .large-portrait {
@@ -746,6 +821,198 @@ img {
   gap: 10px;
 }
 
+/* ── Project portfolio ───────────────────────────────────── */
+.projects-full-section {
+  margin-top: 34px;
+}
+
+.projects-full-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.projects-full-header h3 {
+  margin: 6px 0 0;
+  color: var(--ink);
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+}
+
+.project-count-badge {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(39, 77, 69, 0.08);
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.projects-full-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  border-radius: var(--radius-md);
+  background: var(--surface-strong);
+  border: 1px solid rgba(39, 77, 69, 0.12);
+  padding: 26px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-warm));
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.project-header-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(39, 77, 69, 0.08);
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  width: fit-content;
+  margin: 0;
+}
+
+.project-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(185, 132, 73, 0.12);
+  color: var(--accent-warm);
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.project-status-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-warm);
+  flex: 0 0 auto;
+}
+
+.project-card h4 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.project-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.project-desc {
+  margin: 0;
+  line-height: 1.74;
+  flex: 1;
+  min-height: 0;
+}
+
+.project-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid rgba(39, 77, 69, 0.1);
+}
+
+.project-chips span {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: rgba(39, 77, 69, 0.07);
+  color: var(--ink-soft);
+  font-size: 0.79rem;
+  font-weight: 600;
+}
+
+/* ── Kinsar home nav link ────────────────────────────────── */
+.nav-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 8px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fffaf2 !important;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-home-link:hover {
+  background: var(--accent-strong);
+  transform: translateY(-1px);
+}
+
+.nav-home-mark {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  display: grid;
+  place-items: center;
+  font-size: 0.82rem;
+  font-weight: 800;
+  flex: 0 0 auto;
+}
+
+.nav-home-mark.small {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  font-size: 0.74rem;
+}
+
+.founder-nav-link.home-nav {
+  gap: 8px;
+}
+
 @media (max-width: 1080px) {
   .hero,
   .profile-layout,
@@ -760,8 +1027,18 @@ img {
   .stack-grid,
   .project-grid,
   .share-grid,
-  .footer-card-grid {
+  .footer-card-grid,
+  .projects-full-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-featured {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-featured-aside {
+    flex: none;
   }
 
   .site-header,
@@ -776,6 +1053,10 @@ img {
   .contact-list li {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .profile-aside {
+    position: static;
   }
 }
 
